@@ -18,15 +18,18 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./scripts
 
       - name: Lint
-        run: cd scripts && npm run lint
+        run: npm run lint
+        working-directory: ./scripts
 
       - name: Format
         run: |
-          cd scripts
           npm run check-formatting
           git diff --exit-code || (echo "Code is not formatted correctly. Please run 'npm run format' locally to fix formatting issues." && exit 1)
+        working-directory: ./scripts
 
       - name: Build
-        run: cd scripts && npm run build
+        run: npm run build
+        working-directory: ./scripts
