@@ -2,6 +2,7 @@ import path from 'path'
 import * as fs from 'fs'
 import type { ProblemData } from './ProblemData'
 import { head } from './head'
+import isProblemDir from './isProblemDir'
 
 export default function getProblemData() {
   const dirs = fs.readdirSync(head, { withFileTypes: true })
@@ -9,8 +10,7 @@ export default function getProblemData() {
   const problemData: ProblemData[] = []
 
   dirs.forEach((dir) => {
-    if (!dir.isDirectory() || dir.name === '.git' || dir.name == 'scripts')
-      return
+    if (!isProblemDir(dir)) return
 
     const problemBuf = fs.readFileSync(`${head}/${dir.name}/problem.json`)
     const problem = JSON.parse(problemBuf.toString())
