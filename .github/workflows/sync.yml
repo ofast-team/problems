@@ -13,5 +13,6 @@ jobs:
 
       - name: Run
         run: |
-          cd scripts
+          npm install
           npm run start
+        working-directory: ./scripts
