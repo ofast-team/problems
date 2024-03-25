@@ -4,7 +4,7 @@ This repository stores the source data for problems on O(fast).
 
 # instructions for problem creation
 
-1. Create a new folder in the `problems` directory with the name of the problem.
+1. Create a new folder in the `problems` directory with the name of the problem. (Note: the folder name is not used for anything associated with the problem)
 
 2. Create a `problem.json` file in the folder you just created. This file should contain the necessary metadata for the problem. Here is an example of what the file should look like:
 
@@ -40,5 +40,5 @@ This repository stores the source data for problems on O(fast).
 }
 ```
 
-3. Add a directory called data containing the input and output files for the problem. The input and output files should be \*.in and \*.out files, respectively. The input and output file names for a specific test should be the same.
+3. Add a directory called data containing the input and output files for the problem. The input and output files should be `*.in` and `*.out` files, respectively. The input and output file names for a specific test should be the same.
 
