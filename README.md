@@ -10,7 +10,7 @@ This repository stores the source data for problems on O(fast).
 
 ```json
 {
-    "problemID": "twosum",
+        "problemID": "twosum",
         "title": "Two Sum",
         "text": "Alice and Bob are working on a secret project where they need to find two numbers in an array that add up to a specific target. They are running out of time and need your help to implement a solution. Can you assist them?\n\nLorem ipsum, dolor sit amet consectetur adipisicing elit. Aut sed placeat, itaque nesciunt hic ea molestiae voluptas error ad consequuntur distinctio animi, accusamus mollitia. Itaque debitis voluptates cupiditate dolorem animi!",
         "problem": "Write a program that takes an array of integers $nums$ and an integer target. The program should return indices of the two numbers such that they add up to the target.",
