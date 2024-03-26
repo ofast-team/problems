@@ -1,6 +1,10 @@
 export type Problem = {
   problemID: string
   title: string
+  timeLimit: number
+  memoryLimit: number
+  souce: string
+  author: string
   text: string
   problem: string
   input: string
