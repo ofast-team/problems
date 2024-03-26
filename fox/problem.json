@@ -1,0 +1,24 @@
+{
+    "problemID": "fox",
+        "title": "Fox on Clocks on Bricks and Blocks",
+        "text": "> *And here's a new trick, Mr. Knox....* \n\n> *Socks on chicks and chicks on fox.* \n\n> *Fox on clocks on bricks and blocks.* \n\n> *Bricks and blocks on Knox on box.*\n\n> \\- From Dr. Seuss's Fox in Socks\n\nThere is something so irresistibly fun about a good tongue twister.  As you can see, Mr. Fox’s best tongue twisters have plenty of rhyming pairs. \n\nAfter spending a wonderful day with Mr. Fox, Mr. Knox wanted to try coming up with some of his own tongue twisters.  Mr. Knox borrowed Mr. Fox’s rhyming word dictionary and opened it eagerly.  Listed on the inside cover were the three Golden Rules of Rhyming: \n\n1. Every word rhymes with itself. \n2. If word $a$ rhymes with word $b$, then word $b$ rhymes with word $a$. \n3. If word a rhymes with word $b$, and word $b$ rhymes with word $c$, then word $a$ rhymes with word $c$. \n\nAs he flipped further through the dictionary, Mr. Knox wrote down several of his favorite pairs of rhyming words.  Then, he started to write his first tongue twister.  Mr. Knox wrote and rhymed all day and all night.  As the moon started to set, Mr. Knox gazed at last upon the fruits of his labor: the greatest tongue twister he had ever unsuccessfully attempted to read. \n\nMr. Knox wants to ensure that his tongue twister is good enough before sharing it with Mr. Fox. Here, Mr. Knox has encountered his first obstacle: determining the number of rhyming pairs in his tongue twister.  Can you help him? \n\nAs an example, if “fox” rhymes with “clocks” and also “blocks”, then the tongue twister “fox on clocks on bricks and blocks” has 4 rhyming pairs of words: “fox” with “clocks” as given, “fox” with “blocks” as given, “clocks” with “blocks” using rules 2 and 3, and “on” with “on” using rule 1.",
+        "problem": "Given a list of pairs of rhyming words and Mr. Knox’s tongue twister, determine the number of pairs of words in the tongue twister that rhyme.  Formally, determine the number of integer pairs ($i$, $j$) such that $i < j$ and the $i^{th}$ and $j^{th}$ words in the tongue twister rhyme.",
+        "input": "The first line of input contains an integer, $n$ ($0 \\leq n \\leq 10^4$), representing the number of pairs of rhyming words in the dictionary.  The next $n$ lines of input each contain two single-space separated strings, $s$ and $t$ ($s \\neq t$), indicating that $s$ rhymes with $t$.  The strings $s$ and $t$ will each contain between $1$ and $10$ lowercase English letters (inclusive).  Furthermore, the input will not contain duplicate pairs of rhyming words (so if the input includes the rhyming pair $x$ $y$, then no following line will include  $x$ $y$ and $y$ $x$ in the input). \n\nThe next line of input is a string containing only lowercase English words (each also inclusively between $1$ and $10$ letters in length) separated by single spaces, representing Mr. Knox’s tongue twister.  The tongue twister will contain at least $1$ and no more than $10^5$ characters. ",
+        "output": "Output an integer: the number of pairs of words in the tongue twister that rhyme.",
+        "sampleData": [
+        {
+            "input": "2\nfox clocks\nfox blocks\nfox on clocks on bricks and blocks",
+            "output": "4"
+        },
+        {
+            "input": "3\nfox blocks\nblocks docks\ndocks socks\nfox on blocks on docks on socks",
+            "output": "9"
+        },
+        {
+            "input": "3\nthree free\ncheese trees\nfleas cheese\nthrough three cheese trees three free fleas flew",
+            "output": "6"
+        }
+        ],
+        "tags": ["Graphs", "Graph Traversals", "Strings", "Data Structures"],
+        "timeLimit": 1 
+}

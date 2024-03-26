@@ -42,3 +42,35 @@ This repository stores the source data for problems on O(fast).
 
 3. Add a directory called data containing the input and output files for the problem. The input and output files should be `*.in` and `*.out` files, respectively. The input and output file names for a specific test should be the same.
 
+Template JSON:
+```json
+{
+    "problemID": "",
+        "title": "",
+        "text": "",
+        "problem": "",
+        "input": "",
+        "output": "",
+        "sampleData": [
+        {
+            "input": "",
+            "output": ""
+        },
+        {
+            "input": "",
+            "output": ""
+        }
+        ],
+        "tags": ["", "", ""],
+        "resources": [
+        {
+            "name": "",
+            "url": ""
+        },
+        {
+            "name": "",
+            "url": ""
+        }
+        ]
+}
+```

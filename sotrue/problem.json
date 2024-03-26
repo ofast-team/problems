@@ -1,0 +1,21 @@
+{
+    "problemID": "sotrue",
+    "title": "So !!!False",
+    "text": "Thomas has decided to apply this philosophy to programming.  Now, when using “True” or “False” booleans in his programs, he adds a certain number of ‘!’ symbols (commonly referred to as not symbols) before the “True” or “False” declaration.  While Thomas thinks this is hilarious, Tyler is annoyed at having to decipher Thomas’s code and has asked you to write a program to automatically convert each unnecessarily contrived boolean declaration into its simplified value.\n\nThe ‘!’ symbol negates the boolean value.  A negated “True” value becomes “False” and a negated “False” value becomes “True.”  The following table demonstrates this phenomenon:\n\n<table> <tr> <td>!True → False</td> <td>!False → True</td> <td>!!!True → !!False → !True → False </td> </tr> </table>",
+    "problem": "Given a string starting with some number of ‘!’ symbols followed by “True” or “False”, determine the simplified boolean value of the statement.",
+    "input": "The first and only line of input will contain a single string of between 4 and 100 characters (inclusive).  This string will begin with some number of ‘!’ symbols (possibly 0 of them), which will be immediately followed by either “True” or “False”. No other characters will appear in the string. ",
+    "output": "Output a single line consisting of either “True” or “False” representing the simplified boolean value of the given string. ",
+    "sampleData": [
+      {
+        "input": "False",
+        "output": "False"
+      },
+      {
+        "input": "!!!False",
+        "output": "True"
+      }
+    ],
+    "tags": ["Strings"],
+    "timeLimit": 1 
+  }
+  
