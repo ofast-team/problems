@@ -19,5 +19,6 @@
             "output": "6"
         }
         ],
-        "tags": ["Graphs", "Graph Traversals", "Strings", "Data Structures"]
+        "tags": ["Graphs", "Graph Traversals", "Strings", "Data Structures"],
+        "timeLimit": 1 
 }

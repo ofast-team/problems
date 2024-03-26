@@ -21,5 +21,6 @@
             "name": "Dynamic Programming",
             "url": "https://ofast.io/learn/dynamic-programming/recursive-functions"
         }
-        ]
+        ],
+        "timeLimit": 1 
 }

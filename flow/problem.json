@@ -15,5 +15,6 @@
             "output": "0\n0\n0\n0"
         }
     ],
-    "tags": ["Graphs"]
+    "tags": ["Graphs"],
+    "timeLimit": 1 
 }

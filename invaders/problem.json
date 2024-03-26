@@ -15,5 +15,6 @@
             "output": "Better luck next time!"
         }
         ],
-        "tags": ["Strings", "Simulation"]
+        "tags": ["Strings", "Simulation"],
+        "timeLimit": 1 
 }

@@ -15,5 +15,6 @@
             "output": "Travis Meade\nTyler Marks\nThomas Meeks"
         }
         ],
-        "tags": ["Implementation", "Data Structures"]
+        "tags": ["Implementation", "Data Structures"],
+        "timeLimit": 1 
 }

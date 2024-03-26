@@ -19,5 +19,6 @@
             "output": "7840000 "
         }
         ],
-        "tags": ["Number Theory", "Inclusion-Exclusion", "Counting"]
+        "tags": ["Number Theory", "Inclusion-Exclusion", "Counting"],
+        "timeLimit": 1 
 }

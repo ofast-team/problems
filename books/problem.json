@@ -3,7 +3,7 @@
   "title": "Lior's Books",
   "text": "Lior has become quite the avid reader and has assembled an impressive collection of books. He has stacked these books on a table to varying heights and eventually plans to organize them. For now, Lior will settle with all the book stacks having the same number of books. Since Lior would like to go back to playing Super Auto Pets, he wants to make as few moves as possible. A move consists of taking the top book from any stack and placing it on top of any other stack. Lior has asked you to write a program that will determine whether or not he can make all book stacks the same height. If it is possible, he would also like to know the minimum number of movements necessary so he can complete this tedious task and go back to playing Super Auto Pets as quickly as possible!",
   "problem": "Given a list of how many books are in each stack, determine if it is possible to make all of the stacks the same height and if so, what is the minimum number of movements that must be made to make all of the stacks equal height.",
-  "input": "The input will start with a line containing a single integer, $s (1 ≤ s ≤ 103 )$ representing the number of book stacks Lior currently has. The following line will contain $s$ integers, $h_i (0 ≤ h_i ≤ 109 )$, representing the height of the $i$-th stack, respectively.",
+  "input": "The input will start with a line containing a single integer, $s (1 \\leq s \\leq 10^3 )$ representing the number of book stacks Lior currently has. The following line will contain $s$ integers, $h_i (0 \\leq h_i \\leq 10^9)$, representing the height of the $i^{th}$ stack, respectively.",
   "output": "Output a single integer: the minimum number of movements Lior must complete to make all of the stacks have an equal number of books. If it is impossible to do so, output “impossible” instead.",
   "sampleData": [
     {
@@ -19,5 +19,6 @@
       "output": "0"
     }
   ],
-  "tags": ["Math"]
+  "tags": ["Math"],
+  "timeLimit": 1 
 }

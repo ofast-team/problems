@@ -19,5 +19,6 @@
             "output": "6"
         }
         ],
-        "tags": ["Math"]
+        "tags": ["Math"],
+        "timeLimit": 1 
 }

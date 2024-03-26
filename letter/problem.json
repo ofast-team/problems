@@ -25,5 +25,6 @@
             "name": "Greedy",
             "url": "https://ofast.io/learn/greedy"
         }
-        ]
+        ],
+        "timeLimit": 1 
 }

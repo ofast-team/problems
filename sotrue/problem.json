@@ -15,6 +15,7 @@
         "output": "True"
       }
     ],
-    "tags": ["Strings"]
+    "tags": ["Strings"],
+    "timeLimit": 1 
   }
   

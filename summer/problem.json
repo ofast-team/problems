@@ -19,5 +19,6 @@
             "output": "Diamond is unbreakable!"
         }
         ],
-        "tags": ["Math", "Prefix Sums"]
+        "tags": ["Math", "Prefix Sums"],
+        "timeLimit": 1 
 }
