@@ -1,0 +1,19 @@
+{
+    "problemID": "pseudonym",
+        "title": "Pseudonym Predicament",
+        "text": "On the UCF Programming Team, we care a lot about efficiency, and saying people's names takes way too much time!  Instead, people will be referred to by their first and last initials.  However, this is problematic because of team members such as Tyler Marks and Thomas Meeks, who share initials.  To avoid ambiguity, team members will also be assigned a number based on when they entered the room, starting with 0.  So, if Tyler enters the room, he will be given the pseudonym TM0; when Thomas enters, he will be given the pseudonym TM1.\n\nWhen someone leaves the room, the number in their pseudonym can then be reassigned if someone else with the same initials enters later.  Numbers will be assigned such that the smallest non-negative integer not currently in use by anyone with the same initials is given to the next person entering.  Note that multiple people can have the same number assigned to them if they have different initials.\n\nThis naming scheme has gotten quite confusing, so you have been asked to write a program that identifies who a certain pseudonym refers to as people enter and leave. ",
+        "problem": "Given queries of pseudonyms, determine to whom the queried pseudonym refers as people enter and leave.",
+        "input": "The first line will consist of a single integer, $q$ ($1 \\leq q \\leq 2 \\times 10^5$), representing the number of queries.  The following $q$ lines will take one of the following forms: \n\n- `Enter <FirstName> <LastName>` representing that a person with the corresponding first and last name has entered the room.  It is guaranteed that no one in the room will already have the same first and last name. \n- `Leave <FirstName> <LastName>` representing that a person with the corresponding first and last name has left the room.  It is guaranteed that the person is currently in the room. \n- `Who's <Pseudonym>` querying the name of the person whom the pseudonym represents.  It is possible that no one in the room currently has the queried pseudonym. \n\nFirst and last names will each have at least one letter and at most ten letters, and each will start with an uppercase letter followed by zero or more lowercase letters.  A pseudonym will begin with two uppercase letters, followed by at least one and at most six digits.  It is guaranteed that there will be no leading zeros in the number (with the exception of the value 0 itself, which will be a single 0).",
+        "output": "For each “`Who's`” query, output a single line containing the first and last name of the person (as it appears in the input) that the pseudonym represents, separated by a single space.  If no one currently in the room has that pseudonym, output “`404 PERSON NOT FOUND`” instead. ",
+        "sampleData": [
+        {
+            "input": "7\nEnter Tyler Marks\nEnter Benjamin Prins\nEnter Brian Barak\nWho's TM1\nEnter Thomas Meeks\nWho's TM1\nWho's BB0",
+            "output": "404 PERSON NOT FOUND\nThomas Meeks\nBrian Barak"
+        },
+        {
+            "input": "10\nEnter Tyler Marks\nEnter Travis Meade\nWho's TM1\nEnter Thomas Meeks\nLeave Tyler Marks\nLeave Travis Meade\nEnter Travis Meade\nEnter Tyler Marks\nWho's TM1\nWho's TM2",
+            "output": "Travis Meade\nTyler Marks\nThomas Meeks"
+        }
+        ],
+        "tags": ["Implementation", "Data Structures"]
+}
