@@ -1,0 +1,15 @@
+{
+  "problemID": "picasso",
+  "title": "Problematic Picasso",
+  "text": "Picasso’s daughter and protégé, Katie, has just finished painting several masterpieces and she is ready to sell them to the highest bidder. Well, there are only two bidders worthy of purchasing her art: Tess and Maxie. Tess has enough storage space in her nearby mansion to buy every painting Katie has made, but Maxie lives far away and has to ship the paintings on a luxury cargo plane. Maxie is very greedy, however, and she will be upset if she cannot completely fill her plane with Katie’s paintings. Since beauty is in the eye of the beholder, Tess and Maxie may offer different amounts of money for each painting. Katie, being the creator of these masterpieces, has the prerogative to choose who buys which painting. Wanting to avoid Maxie making a scene, she will sell Maxie exactly as many paintings as she can possibly store on her plane, and will sell the rest to Tess. Help Katie determine the maximum amount of money she can earn!",
+  "problem": "Given the amount of money Tess and Maxie will bid on each painting, as well as how many paintings Maxie will buy, determine the maximum amount of money Katie can earn if she sells her paintings optimally.",
+  "input": "The first line of the input will contain a single integer, $a$, representing the number of auctions. Each auction will be represented by multiple lines. The first line of each auction will contain two integers, $n$ and $x$ $(1 \\leq x \\leq n \\leq 1,000)$, representing the number of paintings Katie has to sell, and the number of paintings Maxie will buy, respectively. The next line will contain $n$ integers, $0 \\leq t_1, t_2, ..., t_n \\leq 10^5$ , where $t_i$ is the amount of money Tess will pay for the $i^{th}$ painting. The next line will contain $n$ integers, $m_1, m_2, ..., m_n$ (each between 0 and $10^5$, inclusive), where $m_i$ is the amount of money Maxie will pay for the $i^{th}$ painting.",
+  "output": "For each auction, output on a new line the maximum amount of money Katie can make by selling her art such that Maxie gets exactly $x$ paintings and Tess gets the rest.",
+  "sampleData": [
+    {
+      "input": "2\n5 3\n1 2 3 4 5\n3 1 9 2 3\n4 2\n2 0 2 2\n1 2 3 4",
+      "output": "22\n10"
+    }
+  ],
+  "tags": ["Greedy"]
+}
