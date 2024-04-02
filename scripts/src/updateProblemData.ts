@@ -10,7 +10,7 @@ export async function updateProblemData(problemData: ProblemData[]) {
           console.log(
             'Document successfully written!',
             data.problemID,
-            data.testID
+            data.testID,
           )
         })
         .catch((error) => {
@@ -18,9 +18,9 @@ export async function updateProblemData(problemData: ProblemData[]) {
             'Error adding document: ',
             error,
             data.problemID,
-            data.testID
+            data.testID,
           )
-        })
-    )
+        }),
+    ),
   )
 }

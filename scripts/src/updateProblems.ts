@@ -7,7 +7,7 @@ export async function updateProblems(problems: Problem[]) {
     problems.map((problem) =>
       setDoc(doc(db, 'Problems', problem.problemID), problem, {
         merge: true,
-      })
-    )
+      }),
+    ),
   )
 }
