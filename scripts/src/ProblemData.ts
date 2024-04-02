@@ -1,7 +1,6 @@
 export type ProblemData = {
   problemID: string
-  data: {
-    input: string
-    output: string
-  }[]
+  testID: string
+  input: string
+  output: string
 }
