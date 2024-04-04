@@ -1,0 +1,30 @@
+{
+    "problemID": "through",
+    "title": "No Way Out But Through",
+    "timeLimit": 1,
+    "memoryLimit": 512,
+    "author": "",
+    "source": "UCF High School Programming Tournament  Online 23-24'",
+    "text": "Temra the warrior jolts awake in a modest cottage in the village of Almanor. She stares\nuncomprehendingly as the very ground seems to come alive with a fierce shaking. Windows\nrattle and shatter. Racing footsteps pound past her door. Screams rend the air. Almanor is\nunder attack!\n\nTemra fetches her most prized possession, a magical war hammer enchanted by her sister, and\nruns outside. The sight almost brings her to her knees: there are n armor-plated dire wolves\nwreaking havoc in the village square and lives are in danger!\n\nThe war hammer is a special artifact that imbibes power from Temra's desire to maintain peace\nin the village. The hammer's power level can be represented by a non-negative integer. Because\nthe hammer is so volatile, Temra maintains it at power level $0$ whenever it is not in use. Temra\ncan increase the power level of her hammer in two ways:\n\n- Pray to the Goddess of Bounty, who will multiply the hammer's power level by a positive\ninteger, $k$.\n\n- Pray to the Goddess of Hope, who will increase the hammer's power level by $1$.\n\nThe goddesses are benevolent, and will answer every prayer that Temra makes. Temra wishes to\nmake her hammer's power level equal to exactly $n$, so that she will have just enough blows to kill\nevery wolf without bringing harm to the townspeople.",
+    "problem": "Given the number of wolves attacking the village square and the integer parameter, $k$, determine\nthe minimum number of prayers Temra will need to make her war hammer’s power level exactly\nequal to the number of wolves.",
+    "input": "The input consists of a single line containing two integers, $n$ $(1 ≤ n ≤ 10^{18} )$ and $k$ $(2 ≤ k ≤ 10)$,\nrepresenting the number of wolves in the square and the parameter $k$ as described in the\nstatement.",
+    "output": "Output a single integer: the minimum number of prayers Temra will need to make her war\nhammer’s power level exactly equal to the number of wolves.",
+    "sampleData": [
+      {
+        "input": "197 2",
+        "output": "11"
+      },
+      {
+        "input": "1000000000000000000 10",
+        "output": "19"
+      },
+      {
+        "input": "6 3",
+        "output": "3"
+      }
+    ],
+    "tags": [
+      "Math"
+    ],
+    "resources": []
+  }

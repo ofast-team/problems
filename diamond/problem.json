@@ -1,0 +1,26 @@
+{
+    "problemID": "diamond",
+    "title": "Diamond Mining",
+    "timeLimit": 1,
+    "memoryLimit": 512,
+    "author": "",
+    "source": "UCF High School Programming Tournament  Online 23-24'",
+    "text": "You and your friends have a Minecraft server. After many weeks of playtime, you have gathered\na tremendous amount of resources. To organize all these resources, you have built multiple\nstorage hubs to house each resource you consider valuable. Presently, you are in the process of\ncreating a series of underground tunnels to connect each of your storage centers. Each storage\nhub houses a single type of item.\n\nWhile you enjoy spending your time constructing an elaborate series of tunnels, your friend very\nmuch enjoys skydiving, and repeatedly loses their inventory upon impact. Thus, they constantly\nhave to build a new set of armor from scratch, taking advantage of your enviable stores of\ndiamonds. Your friend continually interrupts your mining to request directions to a diamond\nhub, so you’ve decided to set up signs at each of the hubs from the starting home where your\nfriend respawns to your nearest diamond hub to show your friend where to go.\n\nTo do so, you first need to know how many signs you need. You will set up signs at each hub\n(including home) until you reach the nearest diamond hub. It is not necessary to add a sign in the\ndiamond hub.",
+    "problem": "Given the number of hubs and the tunnels between them, determine the number of signs required\nto guide your friend from home to the nearest diamond hub.",
+    "input": "The first line will contain two integers, $n$ $(1 < n < 1000)$ and $m$ $(0 < m < 1000)$, representing the\nnumber of hubs and the number of tunnels between the hubs. The following $n$ lines will contain\na string, $r_i$, representing the resource of hub i. The first string, $r_1$, will always have “home” as its\nname. Then, $m$ lines follow, each containing two integers, $i$ and $j$ $(1 ≤ i ≤ n; 1 ≤ j ≤ n)$, denoting\na tunnel between hub $i$ and hub $j$. Note that tunnels are bidirectional, and there will only be a\nsingle tunnel between a given $(i, j)$ pair (furthermore, there are no tunnels connecting a given\nhub $i$ to itself). In addition, it is guaranteed that a diamond hub will be reachable. The names of\nresources will contain only lowercase English letters and will be of length $1$ to $15$, inclusive.",
+    "output": "Output a single integer: the number of signs you need to use to direct your friend from home to\nthe nearest diamond hub.",
+    "sampleData": [
+      {
+        "input": "3 2\nhome\nemerald\ndiamond\n1 2\n2 3",
+        "output": "2"
+      },
+      {
+        "input": "6 6\nhome\nemerald\ndiamond\ndiamond\nredstone\niron\n1 2\n2 5\n2 6\n5 6\n6 3\n6 4",
+        "output": "3"
+      }
+    ],
+    "tags": [
+      "Graphs"
+    ],
+    "resources": []
+  }
