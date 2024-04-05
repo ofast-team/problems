@@ -1,6 +1,8 @@
 {
+    "author": "Tyler Marks",
     "problemID": "flow",
     "title": "Go with the Flow",
+    "source": "UCF High School Programming Tournament 2024",
     "text": "Marty is a world-renowned Greek plumber (despite his lackluster plumbing skills).  Because he lacks knowledge of fluid mechanics, he often builds plumbing networks that are vulnerable to rupturing. \n\nPlumbing networks consist of pipes that carry water and junctions that connect two or more pipes. Because of Marty’s superstitions, he installs valves on every pipe, forcing the water to flow in one direction in each pipe.  To keep the plumbing network stable, Marty thinks it is best for each junction to have an equal number of pipes leading into the junction as well as leaving the junction.  He measures the stability of a single junction as the number of pipes leading into the junction minus the number of pipes leaving the junction.  \n\nMarty has asked you to determine the stability of each junction in a plumbing network so that he can assess the stability of the entire network.",
     "problem": "Given a plumbing network, determine the stability of each junction. ",
     "input": "The first line of input will consist of two integers, $n$ and $m$ ($2 \\leq n \\leq 10^5$; $1 \\leq m \\leq 10^5$), where $n$ represents the number of junctions and $m$ represents the number of pipes, respectively.  After this, $m$ lines will follow each consisting of two integers, $u$ and $v$ ($1 \\leq u \\leq n$; $1 \\leq v \\leq n$; $u \\neq v$), representing a pipe leaving junction $u$ and leading to junction $v$. ",
