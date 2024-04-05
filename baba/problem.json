@@ -1,0 +1,32 @@
+{
+    "problemID": "baba",
+    "title": "BABA Strings",
+    "timeLimit": 1,
+    "memoryLimit": 512,
+    "author": "",
+    "source": "UCF High School Programming Tournament  Online 23-24'",
+    "text": "BABA is a cool sounding word! A “BABA” string is a string consisting of exclusively A’s and\nB’s such that the number of A’s and B’s in the string are equal. Given this property, note that a\nBABA string can have multiple substrings in it that are also BABA Strings. For example, for the\nstring “BABA” the four BABA strings are BABA, BA, BA, and AB.\n\nBABA the bunny would like to know if a given string is a BABA string. If so, BABA the baby\nbunny would also like to know how many substrings of that BABA string are also BABA\nstrings. BABA, being a bunny and therefore not understanding math, the English language or\nthe concept of a “substring”, is struggling to do this. Would you mind writing a program to help\nthem?\n\nABBA, the brother of BABA, would like you to know that a substring is defined as non-empty\ncontinuous subsequence of characters.",
+    "problem": "Given a string, determine whether it is a BABA string, and if so, determine how many substrings\nof the given string are also BABA strings.",
+    "input": "The input is a single line containing a string, s, of length between 1 and 100,000 (inclusive). The\nstring will contain only uppercase A’s or B’s.",
+    "output": "Output a single line containing a single integer representing the number of substrings of the\ngiven string that are BABA strings. If the inital input string is not a BABA string at all, output\n```BABA IS NOT YOU!``` instead (even though these strings may have substrings that are BABA\nstrings,we will ignore that substrings here).",
+    "sampleData": [
+      {
+        "input": "BABA",
+        "output": "4"
+      },
+      {
+        "input": "BABBB",
+        "output": "BABA IS NOT YOU!"
+      },
+      {
+        "input": "AAABBB",
+        "output": "3"
+      }
+    ],
+    "tags": [
+      "Strings",
+      "Brute Force",
+      "Prefix Sums"
+    ],
+    "resources": []
+  }
