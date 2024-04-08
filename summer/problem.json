@@ -1,24 +1,26 @@
 {
+    "author": "Natalie Longtin",
     "problemID": "summer",
-        "title": "1999, Bizarre Summer",
-        "text": "One golden morning in Morioh, Koichi decided to pay a surprise visit to his love, Yukako.  Koichi painstakingly gift-wrapped an array of integers, put it in the basket of his bike, and pedaled excitedly to Yukako's house. \n\nYukako was so pleased with her present that she decided to frame it and put it on her wall.  However, Yukako decided to first perform an operation on the array so that it would better match her wallpaper.  The operation is as follows: \n\n1. Let Yukako's array be array $a$. \n2. Construct a new array of integers, $b$, where the $i^{th}$ element of $b$ is equal to the sum of the first $i$ elements in $a$. \n3. Set array $a$ equal to array $b$. \n\nFor example, if Yukako’s array is $[1, -2, 3, -4]$, then the array will become $[1, -1, 2, -2]$ after she performs the operation. \n\nAs his golden day turned to a golden night, Koichi pedaled home.  He passed by a wishing well and tossed a coin inside, absently thinking, *I wish every day could be just like this one*. \n\nKoichi woke up the next morning and found himself in a bizarre predicament: the events of the previous day seemed to be repeating themselves.  Once again, Koichi pedaled to Yukako's house.  Once again, Yukako performed the operation on her updated array.  Once again, Koichi pedaled back to the wishing well, but this time, the wishing well was gone.  Standing in its place was the fearsome Stand of Judgement, which spoke to him: \n\n*To reverse your wish, you must tell me how it ends.  If the events of this day were to repeat indefinitely, tell me the sign of the last element in Yukako's array.*",
-        "problem": "If Yukako were to continue performing the described operation on her array indefinitely, determine whether the last element would be positive, negative, or zero.",
-        "input": "The first line of input contains an integer, $n$ ($1 \\leq n \\leq 10^5$), representing the number of elements in Yukako’s array.  The second line of input then contains $n$ integers, where the $i^{th}$ integer, $a_i$ ($-10^9 \\leq a_i \\leq 10^9$), is the $i^{th}$ element of Yukako’s array.",
-        "output": "Output a single line.  If the last element in Yukako’s array would be positive, output “`Good morning, Morioh!`”  If the last element in Yukako’s array would be negative, output “`Good night, Morioh!`”  If the last element in Yukako’s array would be zero, output “`Diamond is unbreakable!`” ",
-        "sampleData": [
-        {
-            "input": "5\n1 2 3 4 5",
-            "output": "Good morning, Morioh!"
-        },
-        {
-            "input": "4\n-1 1 -1 1",
-            "output": "Good night, Morioh!"
-        },
-        {
-            "input": "1\n0",
-            "output": "Diamond is unbreakable!"
-        }
-        ],
-        "tags": ["Math", "Prefix Sums"],
-        "timeLimit": 1 
+    "title": "1999, Bizarre Summer",
+    "source": "UCF High School Programming Tournament 2024",
+    "text": "One golden morning in Morioh, Koichi decided to pay a surprise visit to his love, Yukako.  Koichi painstakingly gift-wrapped an array of integers, put it in the basket of his bike, and pedaled excitedly to Yukako's house. \n\nYukako was so pleased with her present that she decided to frame it and put it on her wall.  However, Yukako decided to first perform an operation on the array so that it would better match her wallpaper.  The operation is as follows: \n\n1. Let Yukako's array be array $a$. \n2. Construct a new array of integers, $b$, where the $i^{th}$ element of $b$ is equal to the sum of the first $i$ elements in $a$. \n3. Set array $a$ equal to array $b$. \n\nFor example, if Yukako’s array is $[1, -2, 3, -4]$, then the array will become $[1, -1, 2, -2]$ after she performs the operation. \n\nAs his golden day turned to a golden night, Koichi pedaled home.  He passed by a wishing well and tossed a coin inside, absently thinking, *I wish every day could be just like this one*. \n\nKoichi woke up the next morning and found himself in a bizarre predicament: the events of the previous day seemed to be repeating themselves.  Once again, Koichi pedaled to Yukako's house.  Once again, Yukako performed the operation on her updated array.  Once again, Koichi pedaled back to the wishing well, but this time, the wishing well was gone.  Standing in its place was the fearsome Stand of Judgement, which spoke to him: \n\n*To reverse your wish, you must tell me how it ends.  If the events of this day were to repeat indefinitely, tell me the sign of the last element in Yukako's array.*",
+    "problem": "If Yukako were to continue performing the described operation on her array indefinitely, determine whether the last element would be positive, negative, or zero.",
+    "input": "The first line of input contains an integer, $n$ ($1 \\leq n \\leq 10^5$), representing the number of elements in Yukako’s array.  The second line of input then contains $n$ integers, where the $i^{th}$ integer, $a_i$ ($-10^9 \\leq a_i \\leq 10^9$), is the $i^{th}$ element of Yukako’s array.",
+    "output": "Output a single line.  If the last element in Yukako’s array would be positive, output “`Good morning, Morioh!`”  If the last element in Yukako’s array would be negative, output “`Good night, Morioh!`”  If the last element in Yukako’s array would be zero, output “`Diamond is unbreakable!`” ",
+    "sampleData": [
+    {
+        "input": "5\n1 2 3 4 5",
+        "output": "Good morning, Morioh!"
+    },
+    {
+        "input": "4\n-1 1 -1 1",
+        "output": "Good night, Morioh!"
+    },
+    {
+        "input": "1\n0",
+        "output": "Diamond is unbreakable!"
+    }
+    ],
+    "tags": ["Math", "Prefix Sums"],
+    "timeLimit": 1 
 }

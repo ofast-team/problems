@@ -1,9 +1,9 @@
 {
+    "author": "Chris Gittings",
     "problemID": "contact",
     "title": "First Contact Counting",
     "timeLimit": 1,
     "memoryLimit": 512,
-    "author": "",
     "source": "UCF High School Programming Tournament  Online 23-24'",
     "text": "Extraterrestrials have made first contact. Travis has received the honor of being humanity’s first\nliaison with the extraterrestrials, and he has brought you along to help him with the momentous\ntask of communication.\n\nAfter weeks of trial and error, you and Travis have taught the extraterrestrials about humanity’s\nnumerical system. Now, the extraterrestrials are attempting to teach you about their counting\nsystem. Their system appears to be a form of base $10$. When counting, the numbers start at\nsome positive integer and increment by a constant integer not necessarily equal to $1$.\n\nTravis has instructed you to focus your work on the task of understanding this counting system.",
     "problem": "Given a sequence of ordered numbers, determine the next number in the sequence.",

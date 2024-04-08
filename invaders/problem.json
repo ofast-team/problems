@@ -1,20 +1,22 @@
 {
+    "author": "Tyler Marks",
     "problemID": "invaders",
-        "title": "Space Invaders",
-        "text": "You are playing the classic video game Space Invaders!  In this game, you move a laser cannon at the bottom of the screen left and right while attempting to shoot as many aliens as possible. You have three controls: move left one unit, move right one unit, and fire the cannon.  After several hours of playing this game, you decide it is too easy and add a secondary challenge for yourself: finish with the cannon in the middle of the screen.  Given a sequence of left and right moves you make and your starting position, you want to determine if you will successfully end in the middle of the screen.  Note that the screen does not have bounds and the laser cannon can move left and right as much as desired.",
-        "problem": "Given a sequence of left and right moves and the starting position, determine if the cannon will end in the middle of the screen.",
-        "input": "The first line of input consists of two integers, $n$ ($1 \\leq n \\leq 100$) and $x$ ($-100 \\leq x \\leq 100$), representing the number of commands and the starting position of the laser cannon on the screen, respectively.  The middle of the screen is represented by $x = 0$.  The next line will contain a single string of $n$ characters, composed of ‘`L`’s and ‘`R`’s.  An ‘`L`’ represents a move left, decreasing the position by one, and an ‘`R`’ represents a move right, increasing the position by one.",
-        "output": "Output a single line.  If you will successfully end in the middle of the screen, output “`Challenge completed!`”  Otherwise, output “`Better luck next time!`” ",
-        "sampleData": [
-        {
-            "input": "3 1\nLLR",
-            "output": "Challenge completed!"
-        },
-        {
-            "input": "5 -1\nRRRRR",
-            "output": "Better luck next time!"
-        }
-        ],
-        "tags": ["Strings", "Simulation"],
-        "timeLimit": 1 
+    "title": "Space Invaders",
+    "source": "UCF High School Programming Tournament 2024",
+    "text": "You are playing the classic video game Space Invaders!  In this game, you move a laser cannon at the bottom of the screen left and right while attempting to shoot as many aliens as possible. You have three controls: move left one unit, move right one unit, and fire the cannon.  After several hours of playing this game, you decide it is too easy and add a secondary challenge for yourself: finish with the cannon in the middle of the screen.  Given a sequence of left and right moves you make and your starting position, you want to determine if you will successfully end in the middle of the screen.  Note that the screen does not have bounds and the laser cannon can move left and right as much as desired.",
+    "problem": "Given a sequence of left and right moves and the starting position, determine if the cannon will end in the middle of the screen.",
+    "input": "The first line of input consists of two integers, $n$ ($1 \\leq n \\leq 100$) and $x$ ($-100 \\leq x \\leq 100$), representing the number of commands and the starting position of the laser cannon on the screen, respectively.  The middle of the screen is represented by $x = 0$.  The next line will contain a single string of $n$ characters, composed of ‘`L`’s and ‘`R`’s.  An ‘`L`’ represents a move left, decreasing the position by one, and an ‘`R`’ represents a move right, increasing the position by one.",
+    "output": "Output a single line.  If you will successfully end in the middle of the screen, output “`Challenge completed!`”  Otherwise, output “`Better luck next time!`” ",
+    "sampleData": [
+    {
+        "input": "3 1\nLLR",
+        "output": "Challenge completed!"
+    },
+    {
+        "input": "5 -1\nRRRRR",
+        "output": "Better luck next time!"
+    }
+    ],
+    "tags": ["Strings", "Simulation"],
+    "timeLimit": 1 
 }

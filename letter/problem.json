@@ -1,30 +1,32 @@
 {
+    "author": "Natalie Longtin",
     "problemID": "letter",
-        "title": "Missing You from Letter Land",
-        "text": "Letter Land is a uniquely wonderful kingdom where words are formed by putting individual letters together.  The Queen of Letter Land regularly assembles words of love and encouragement and sends them to her daughter, who rules across the sea in La La Land.  The three words the queen likes to send to her daughter are as follows: \n\n*brightness*: a reminder to always spread happiness and light throughout her kingdom \n\n*fairness*: a reminder to rule with a firm yet fair hand \n\n*princess*: a reminder of her royal worth and connection to her family \n\nThe queen sits upon a throne made entirely of lowercase English letters.  Whenever the queen sends a word to her daughter, she assembles the word by removing letters from her throne.  For instance, in the first sample input, the queen can construct two instances of the word brightness.  In the second sample input, the queen can construct a single instance each of brightness, fairness, and princess.  When an instance of a letter is used to form one of the words, it cannot be reused for another word. \n\nThe queen would like to send her daughter as many words as possible.  Can you, the queen’s loyal advisor, tell her how many words that is?",
-        "problem": "Given the frequencies of the 26 English letters that make up the queen’s throne, determine the maximum total count of instances of the words *brightness*, *fairness*, and *princess* that the queen will be able to send her daughter.",
-        "input": "The first line of input contains an integer, $n$ ($0 \\leq n \\leq 26$), representing the number of different types of letters present in the queen’s throne.  The following $n$ lines of input each consist of a lowercase alphabetic character, $c$, and an integer, $x$ ($1 \\leq x \\leq 10^5$), indicating that the character $c$ appears $x$ times in the queen's throne.  If a letter does not appear in the input, it can be assumed that it does not appear in the queen’s throne.  Each letter will appear at most once in the input.",
-        "output": "Output a single integer: the maximum number of words the queen can send her daughter.",
-        "sampleData": [
-        {
-            "input": "9\nb 2\ne 2\ng 2\nh 2\ni 2\nn 2\nr 2\ns 4\nt 2",
-            "output": "2"
-        },
-        {
-            "input": "13\na 1\nb 1\nc 1\ne 3\nf 1\ng 1\nh 1\ni 3\nn 3\np 1\nr 3\ns 6\nt 1",
-            "output": "3"
-        },
-        {
-            "input": "1\nx 1000",
-            "output": "0"
-        }
-        ],
-        "tags": ["Strings", "Greedy", "Math"],
-        "resources": [
-        {
-            "name": "Greedy",
-            "url": "https://ofast.io/learn/greedy"
-        }
-        ],
-        "timeLimit": 1 
+    "title": "Missing You from Letter Land",
+    "source": "UCF High School Programming Tournament 2024",
+    "text": "Letter Land is a uniquely wonderful kingdom where words are formed by putting individual letters together.  The Queen of Letter Land regularly assembles words of love and encouragement and sends them to her daughter, who rules across the sea in La La Land.  The three words the queen likes to send to her daughter are as follows: \n\n*brightness*: a reminder to always spread happiness and light throughout her kingdom \n\n*fairness*: a reminder to rule with a firm yet fair hand \n\n*princess*: a reminder of her royal worth and connection to her family \n\nThe queen sits upon a throne made entirely of lowercase English letters.  Whenever the queen sends a word to her daughter, she assembles the word by removing letters from her throne.  For instance, in the first sample input, the queen can construct two instances of the word brightness.  In the second sample input, the queen can construct a single instance each of brightness, fairness, and princess.  When an instance of a letter is used to form one of the words, it cannot be reused for another word. \n\nThe queen would like to send her daughter as many words as possible.  Can you, the queen’s loyal advisor, tell her how many words that is?",
+    "problem": "Given the frequencies of the 26 English letters that make up the queen’s throne, determine the maximum total count of instances of the words *brightness*, *fairness*, and *princess* that the queen will be able to send her daughter.",
+    "input": "The first line of input contains an integer, $n$ ($0 \\leq n \\leq 26$), representing the number of different types of letters present in the queen’s throne.  The following $n$ lines of input each consist of a lowercase alphabetic character, $c$, and an integer, $x$ ($1 \\leq x \\leq 10^5$), indicating that the character $c$ appears $x$ times in the queen's throne.  If a letter does not appear in the input, it can be assumed that it does not appear in the queen’s throne.  Each letter will appear at most once in the input.",
+    "output": "Output a single integer: the maximum number of words the queen can send her daughter.",
+    "sampleData": [
+    {
+        "input": "9\nb 2\ne 2\ng 2\nh 2\ni 2\nn 2\nr 2\ns 4\nt 2",
+        "output": "2"
+    },
+    {
+        "input": "13\na 1\nb 1\nc 1\ne 3\nf 1\ng 1\nh 1\ni 3\nn 3\np 1\nr 3\ns 6\nt 1",
+        "output": "3"
+    },
+    {
+        "input": "1\nx 1000",
+        "output": "0"
+    }
+    ],
+    "tags": ["Strings", "Greedy", "Math"],
+    "resources": [
+    {
+        "name": "Greedy",
+        "url": "https://ofast.io/learn/greedy"
+    }
+    ],
+    "timeLimit": 1 
 }

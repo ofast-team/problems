@@ -4,32 +4,21 @@ import getProblemData from './getProblemData'
 const problems = getProblems()
 const problemData = getProblemData()
 
-import axios from 'axios'
-import buildPath from './path'
+import { updateProblems } from './updateProblems'
+import { updateProblemData } from './updateProblemData'
 
-axios
-  .post(buildPath('/updateProblems'), problems, {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  })
-  .then((response) => {
-    console.log('Response from the API:', response.data)
+updateProblems(problems)
+  .then(() => {
+    console.log('Problems updated')
   })
   .catch((error) => {
-    console.error('Error making API request:', error)
+    console.error('Failed to update problems:', error)
   })
 
-axios
-  .post(buildPath('/updateProblemData'), problemData, {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  })
-
-  .then((response) => {
-    console.log('Response from the API:', response.data)
+updateProblemData(problemData)
+  .then(() => {
+    console.log('Problem data updated')
   })
   .catch((error) => {
-    console.error('Error making API request:', error)
+    console.error('Failed to update problem data:', error)
   })
