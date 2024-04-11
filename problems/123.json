@@ -1,0 +1,10 @@
+{
+  "problemID": 123,
+  "name": "Example Problem",
+  "description": "This is an example problem description.",
+  "difficulty": "Easy",
+  "topics": [
+    "Arrays",
+    "Strings"
+  ]
+}
