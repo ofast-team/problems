@@ -1,0 +1,22 @@
+{
+  "problemID": "twosum",
+  "title": "Two Sum",
+  "timeLimit": 1,
+  "memoryLimit": 1024,
+  "author": "John Doe",
+  "source": "O(fast)",
+  "text": "Alice and Bob...\n",
+  "problem": "Write a program that adds two numbers.",
+  "input": "The input consists of a single test case.",
+  "output": "Print two integers.",
+  "sampleData": [
+    {
+      "input": "1 2",
+      "output": "3"
+    }
+  ],
+  "tags": [
+    "Math"
+  ],
+  "resources": []
+}
